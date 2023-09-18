@@ -3,18 +3,25 @@ import React from "react";
 import Header from "../components/header";
 import Categories from "../components/categories";
 import Restaurants from "../components/restaurants";
+import { heightPercentageToDP as hp, widthPercentageToDP as wp } from "react-native-responsive-screen";
 
 const HomeScreen = () => {
   return (
-    <View className="space-x-4 flex">
+    <View className="mb-3" >
       {/* Header */}
-      <Header />
-      
+      <View className="mb-3">
+        <Header />
+      </View>
+
       {/* Category */}
-      <Categories />
+      <View className="mb-3" >
+        <Categories />
+      </View>
 
       {/* Restaurants */}
-      <Restaurants />
+      <View style={{marginBottom: wp(138)}} >
+        <Restaurants />
+      </View>
     </View>
   );
 };

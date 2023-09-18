@@ -11,12 +11,12 @@ const CategorieCard = ({ category, navigation }) => {
   return (
     <TouchableOpacity
       className=" mx-2 mt-5 items-center justify-between drop-shadow-2xl   "
-      style={{ width: wp(20), height: wp(20) }}
+      style={{ width: wp(30), height: wp(30) }}
     >
       <Image
         source={category.image}
         alt={category.name}
-        style={{ width: wp(20), height: wp(20) }}
+        style={{ width: wp(30), height: wp(30) }}
         className="rounded-lg"
       />
           <Text className=" p-0.5 ml-1 shadow-sm bottom-1 text-xs text-center absolute ">

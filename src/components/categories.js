@@ -11,10 +11,8 @@ const Categories = () => {
       horizontal
       showsHorizontalScrollIndicator={false}
       contentContainerStyle={{
-        alignItems: "center",
-        marginTop:10
+        paddingTop:10
       }}
-
     >
       {categories?.map((category, index) => {
         return (
